@@ -1,0 +1,18 @@
+{
+    "cars": [
+      {
+        "id": 1,
+        "name": "Tesla Model S",
+        "price": 80000,
+        "mileage": 12000,
+        "image": "https://example.com/tesla-model-s.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Toyota Camry",
+        "price": 30000,
+        "mileage": 25000,
+        "image": "https://example.com/toyota-camry.jpg"
+      }
+    ]
+  }
