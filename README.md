@@ -1,54 +1,44 @@
-# React + TypeScript + Vite
+# Automobile Listing Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and user-friendly automobile listing website built with React, Redux Toolkit, and Material-UI (MUI). The platform allows users to browse, filter, and wishlist cars based on various attributes.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Dashboard**:
+  - Display a list of cars with filtering options (e.g., price, mileage).
+  - Add cars to the wishlist.
 
-## Expanding the ESLint configuration
+- **Wishlist**:
+  - View all wishlisted cars.
+  - Remove cars from the wishlist.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **User Profile**:
+  - Display and edit basic user information (e.g., name, email).
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Frontend**:
+  - React (with TypeScript)
+  - Redux Toolkit (for state management)
+  - Material-UI (MUI) (for UI components)
+  - React Router (for routing)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Mock API**:
+  - `json-server` (for serving static data)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/automobile-listing.git
+   cd automobile-listing 
+   2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run start
+   
+   
