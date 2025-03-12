@@ -14,7 +14,10 @@ const wishlistSlice = createSlice({
   initialState,
   reducers: {
     addToWishlist: (state, action: PayloadAction<CarDTO>) => {
-      state.wishlist.push(action.payload);
+      // Check if the car is already in the wishlist
+      if (!state.wishlist.some((car) => car.id === action.payload.id)) {
+        state.wishlist.push(action.payload);
+      }
     },
     removeFromWishlist: (state, action: PayloadAction<number>) => {
       state.wishlist = state.wishlist.filter((car) => car.id !== action.payload);

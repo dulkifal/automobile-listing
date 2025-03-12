@@ -1,42 +1,44 @@
 import React from 'react';
-import { TextField, RadioGroup, FormControlLabel, Radio } from '@mui/material';
+import { TextField } from '@mui/material';
 
 interface FilterBarProps {
-  onFilterChange: (filter: { price?: string; mileage?: string }) => void;
+  onPriceChange: (price: number) => void;
+  onMileageChange: (mileage: number) => void;
+  onNameChange: (name: string) => void;
 }
 
-const FilterBar: React.FC<FilterBarProps> = ({ onFilterChange }) => {
-  const handlePriceChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    onFilterChange({ price: event.target.value });
-  };
-
-  const handleMileageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    onFilterChange({ mileage: event.target.value });
-  };
+const FilterBar: React.FC<FilterBarProps> = ({ onMileageChange, onPriceChange, onNameChange }) => {
+  
 
   return (
     <div>
+      
+      <TextField
+        label="Name"
+        variant="outlined"
+        type="text"
+        onChange={(e) => onNameChange(String(e.target.value))}
+        fullWidth
+        margin="normal"
+      />
       <TextField
         label="Max Price"
         variant="outlined"
         type="number"
-        onChange={handlePriceChange}
+        onChange={(e) => onPriceChange(Number(e.target.value))}
         fullWidth
         margin="normal"
       />
       <TextField
-        label="Max Mileage"
+        label="Max Mileage no"
         variant="outlined"
         type="number"
-        onChange={handleMileageChange}
+        onChange={(e) => onMileageChange(Number(e.target.value))}
+
         fullWidth
         margin="normal"
       />
-      <RadioGroup row aria-label="price-range" name="price-range">
-        <FormControlLabel value="low" control={<Radio />} label="Low" />
-        <FormControlLabel value="medium" control={<Radio />} label="Medium" />
-        <FormControlLabel value="high" control={<Radio />} label="High" />
-      </RadioGroup>
+   
     </div>
   );
 };

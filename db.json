@@ -1,18 +1,72 @@
-{
-    "cars": [
-      {
-        "id": 1,
-        "name": "Tesla Model S",
-        "price": 80000,
-        "mileage": 12000,
-        "image": "https://example.com/tesla-model-s.jpg"
-      },
-      {
-        "id": 2,
-        "name": "Toyota Camry",
-        "price": 30000,
-        "mileage": 25000,
-        "image": "https://example.com/toyota-camry.jpg"
-      }
-    ]
+{"cars":[
+  {
+    "id": 1,
+    "name": "Tesla Model S",
+    "price": 80000,
+    "mileage": 12000,
+    "image": "https://images.unsplash.com/photo-1541899481282-d53b76630280?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Toyota Camry",
+    "price": 30000,
+    "mileage": 25000,
+    "image": "https://images.unsplash.com/photo-1502877338535-766e1452684a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Ford Mustang",
+    "price": 45000,
+    "mileage": 15000,
+    "image": "https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80"
+  },
+  {
+    "id": 4,
+    "name": "BMW X5",
+    "price": 60000,
+    "mileage": 18000,
+    "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Audi A4",
+    "price": 40000,
+    "mileage": 22000,
+    "image": "https://images.unsplash.com/photo-1580274437630-3dc53be8b56d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Honda Civic",
+    "price": 25000,
+    "mileage": 30000,
+    "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "id": 7,
+    "name": "Porsche 911",
+    "price": 120000,
+    "mileage": 8000,
+    "image": "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "id": 8,
+    "name": "Chevrolet Corvette",
+    "price": 70000,
+    "mileage": 10000,
+    "image": "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "id": 9,
+    "name": "Jeep Wrangler",
+    "price": 35000,
+    "mileage": 20000,
+    "image": "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "id": 10,
+    "name": "Mercedes-Benz GLE",
+    "price": 75000,
+    "mileage": 15000,
+    "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
   }
+]}
