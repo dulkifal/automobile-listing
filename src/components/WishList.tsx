@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../store/store';
 import { removeFromWishlist } from '../slices/wishlistSlice';
-import { List, ListItem, ListItemText, Typography, IconButton } from '@mui/material';
+import { List, ListItem, ListItemText, Typography, IconButton, ListItemAvatar, Avatar } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 const Wishlist: React.FC = () => {
@@ -22,6 +22,9 @@ const Wishlist: React.FC = () => {
         <List>
           {wishlist.map((car) => (
             <ListItem key={car.id}>
+              <ListItemAvatar>
+              <Avatar src={car.image} alt={car.name} variant="rounded" />
+            </ListItemAvatar>
               <ListItemText
                 primary={car.name}
                 secondary={`Price: $${car.price} | Mileage: ${car.mileage} miles`}

@@ -3,13 +3,17 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import Wishlist from './pages/Wishlist';
 import UserProfile from './pages/UserProfile';
-import { AppBar, Toolbar, Typography, Container } from '@mui/material';
+import { AppBar, Toolbar, Typography, Container, CssBaseline } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const App: React.FC = () => {
   return (
     <Router>
-      <AppBar position="static">
+      {/* Add CssBaseline to reset default styles */}
+      <CssBaseline />
+
+      {/* Sticky App Bar */}
+      <AppBar position="sticky" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1, width: '100vw' , paddingRight: 10 }}>
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Automobile Listing
@@ -25,7 +29,9 @@ const App: React.FC = () => {
           </Link>
         </Toolbar>
       </AppBar>
-      <Container sx={{ marginTop: 3 }}>
+
+      {/* Main Content */}
+      <Container sx={{ marginTop: 3, paddingBottom: 3 , height: '100vh' } }>
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/wishlist" element={<Wishlist />} />
